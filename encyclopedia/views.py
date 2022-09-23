@@ -16,7 +16,7 @@ def title(request, entry):
 
 
 def search(request, query):
-    print("HERE")
+
     entries = util.list_entries()
     for ent in entries:
         if query.lower() == entries.lower():
