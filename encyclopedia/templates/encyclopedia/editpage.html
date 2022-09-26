@@ -1,0 +1,10 @@
+{% extends "encyclopedia/layout.html" %} {% block title %} Edit {%endblock%}
+{%block body %}
+<h1>Edit Page</h1>
+<form>
+  <p>
+    <textarea name="text">{{ content|safe }}</textarea>
+  </p>
+  <input type="submit" value="Save" />
+</form>
+{% endblock %}
